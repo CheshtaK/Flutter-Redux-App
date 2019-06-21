@@ -9,7 +9,7 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
 
-  String title = "Me Suite";
+  String title = "Redux App";
 
   final store = Store<AppState>(
     appReducer,
