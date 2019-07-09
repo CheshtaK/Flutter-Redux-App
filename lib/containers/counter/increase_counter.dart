@@ -9,16 +9,16 @@ class IncreaseCountButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new StoreConnector<AppState, VoidCallback>(
+    return StoreConnector<AppState, VoidCallback>(
       converter: (Store<AppState> store) {
         return () {
-          store.dispatch(new IncrementCountAction());
+          store.dispatch(IncrementCountAction());
         };
       },
       builder: (BuildContext context, VoidCallback increase) {
-        return new FloatingActionButton(
+        return FloatingActionButton(
           onPressed: increase,
-          child: new Icon(Icons.add),
+          child: Icon(Icons.add),
         );
       },
     );

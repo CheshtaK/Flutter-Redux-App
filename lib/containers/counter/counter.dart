@@ -7,10 +7,10 @@ import 'package:redux/redux.dart';
 class Counter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return new StoreConnector<AppState, _ViewModel>(
+    return StoreConnector<AppState, _ViewModel>(
         converter: _ViewModel.fromStore,
         builder: (BuildContext context, _ViewModel vm) {
-          return new Text(
+          return Text(
             vm.count.toString(),
             style: Theme.of(context).textTheme.display1,
           );
@@ -26,6 +26,6 @@ class _ViewModel {
   });
 
   static _ViewModel fromStore(Store<AppState> store) {
-    return new _ViewModel(count: store.state.count);
+    return _ViewModel(count: store.state.count);
   }
 }

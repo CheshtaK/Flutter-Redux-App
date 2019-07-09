@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "45165575197",
+    "firebase_url": "https://redux-app-a876d.firebaseio.com",
+    "project_id": "redux-app-a876d",
+    "storage_bucket": "redux-app-a876d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45165575197:android:9b186013fea93222",
+        "android_client_info": {
+          "package_name": "com.example.redux_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45165575197-jjbbrsdfu59aul8g0e8t84udac7rdrf3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.redux_app",
+            "certificate_hash": "65b438addd2339404c766e7da9e6673cf9fdc927"
+          }
+        },
+        {
+          "client_id": "45165575197-3pn6k70h0dpdp2jbgibp36q0e6e1ca6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLMEzfXKr-_bB6Iu9-fba8GkOZvSmhiK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "45165575197-3pn6k70h0dpdp2jbgibp36q0e6e1ca6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

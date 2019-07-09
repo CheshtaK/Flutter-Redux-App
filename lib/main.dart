@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:redux/redux.dart';                              
-import 'package:flutter_redux/flutter_redux.dart';              
+import 'package:flutter_redux/flutter_redux.dart';
+import 'package:redux_app/middleware/auth_middleware.dart';              
 import 'package:redux_app/pages/home_page.dart';
 import 'package:redux_app/models/app_state.dart';
 import 'package:redux_app/reducers/app_reducer.dart';
@@ -15,7 +16,9 @@ class MyApp extends StatelessWidget {
   final store = Store<AppState>(
     appReducer,
     initialState: AppState(),
-    middleware: [LoggingMiddleware.printer()]
+    middleware: []
+      ..addAll(createAuthMiddleware())
+      ..add(LoggingMiddleware.printer()),
   );
 
   @override
